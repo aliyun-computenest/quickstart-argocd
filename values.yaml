@@ -1,0 +1,8 @@
+server:
+  service:
+    type: LoadBalancer
+  redis:
+    master:
+      persistence:
+        storageClass: alicloud-disk-essd
+        size: 40Gi
