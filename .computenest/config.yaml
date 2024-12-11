@@ -3,7 +3,7 @@ Service:
   DeployType: ros
   DeployMetadata:
     ServiceInstanceNameRule:
-      Prefix: argocd
+      Prefix: argocd-
     SupplierDeployMetadata:
       HelmChartArtifactRelation:
         '{{ computenest::helmchart::argocd }}':
@@ -33,4 +33,4 @@ HelmChartBuilder:
   HelmChart_ArgoCD:
     HelmChartPath: '../targets/argo-cd-7.7.8.tgz'
     RepoName: argo-cd
-    Tag: 0.45.1
+    Tag: 7.7.8
