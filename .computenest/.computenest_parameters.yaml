@@ -1,0 +1,24 @@
+ChartValues:
+  service:
+    selector:
+      app.kubernetes.io/name: argocd-server
+    type: LoadBalancer
+    ports:
+    - port: 80
+      targetPort: 80
+    - port: 443
+      targetPort: 443
+HelmChartPath: helm
+RuntimeType: Kubernetes
+OutputCmd: |-
+  export SERVICE_IP=$(kubectl get svc --namespace ${Namespace} argo-cd-argocd-server -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+  echo "http://$SERVICE_IP/"
+ServiceType: private
+ArtifactSourceType: HelmChart
+ServiceBuildRegion: ap-southeast-1
+RepoName: aliyun-computenest/quickstart-argocd
+RegionId: cn-hangzhou
+OutputType: OutputCommand
+Owner: linziqiaolzq
+Branch: main
+Platform: github
