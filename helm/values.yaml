@@ -57,7 +57,7 @@ global:
   # Default image used by all components
   image:
     # -- If defined, a repository applied to all Argo CD deployments
-    repository: quay.io/argoproj/argocd
+    repository: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/argoproj/argocd
     # -- Overrides the global Argo CD image tag whose default is the chart appVersion
     tag: ""
     # -- If defined, a imagePullPolicy applied to all Argo CD deployments
@@ -1012,7 +1012,7 @@ dex:
   ## Dex image
   image:
     # -- Dex image repository
-    repository: ghcr.io/dexidp/dex
+    repository: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/dexidp/dex
     # -- Dex image tag
     tag: v2.41.1
     # -- Dex imagePullPolicy
@@ -1276,7 +1276,7 @@ redis:
   ## Redis image
   image:
     # -- Redis repository
-    repository: public.ecr.aws/docker/library/redis
+    repository: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/library/redis
     # -- Redis tag
     tag: 7.4.1-alpine
     # -- Redis image pull policy

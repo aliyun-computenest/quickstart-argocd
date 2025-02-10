@@ -1,0 +1,7 @@
+image-mapping:
+- original-image: ghcr.io/dexidp/dex:v2.41.1
+  new-image: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/dexidp/dex:v2.41.1
+- original-image: quay.io/argoproj/argocd:v2.13.1
+  new-image: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/argoproj/argocd:v2.13.1
+- original-image: public.ecr.aws/docker/library/redis:7.4.1-alpine
+  new-image: compute-nest-registry.cn-hangzhou.cr.aliyuncs.com/1853370294850618/library/redis:7.4.1-alpine
